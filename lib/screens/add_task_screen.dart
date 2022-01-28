@@ -49,9 +49,7 @@ class AddTask extends StatelessWidget {
                   ),
                   onPressed: () {
                     callbackFunction(
-                      TaskTile(
-                        text: textEditingController.text,
-                      ),
+                      textEditingController.text,
                     );
                     textEditingController.clear();
                   },

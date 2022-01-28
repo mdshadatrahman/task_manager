@@ -27,9 +27,9 @@ class _TasksScreenState extends State<TasksScreen> {
           showModalBottomSheet(
             context: context,
             builder: (context) => AddTask(
-              callbackFunction: (tasklist) {
+              callbackFunction: (newTaskItem) {
                 setState(() {
-                  taskLists.add(tasklist);
+                  taskLists.add(TaskTile(text: newTaskItem));
                 });
                 Navigator.pop(context);
               },
